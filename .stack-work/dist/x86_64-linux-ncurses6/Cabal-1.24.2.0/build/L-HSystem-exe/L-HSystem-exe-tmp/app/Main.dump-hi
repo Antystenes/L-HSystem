@@ -1,0 +1,249 @@
+
+==================== FINAL INTERFACE ====================
+2017-02-17 20:45:16.329243018 UTC
+
+interface main@main:Main 8002
+  interface hash: 7fabb44a7ba61c9f11facf2b91a1e748
+  ABI hash: 1f2ddb32b54425681c3d68b63b9f31d9
+  export-list hash: 26698f7ac26a37f821f09af328091782
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 43195b4be2e87da216daed11198b049d
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.main
+  Main.rew
+  Main.sampleSystem
+  Main.Sym{Main.A Main.B}
+module dependencies:
+package dependencies: L-HSystem-0.1.0.0@L-HSystem-0.1.0.0-L23A8glBq1EKIsMBok0zK6
+                      base-4.9.1.0* ghc-prim-0.5.0.0 integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  L-HSystem-0.1.0.0@L-HSystem-0.1.0.0-L23A8glBq1EKIsMBok0zK6:Lib 20b73bbcf7565b23ae4e5ff7e4f8b40e
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.List ab8c4e523e6c479c549d3bcd5fc4a439
+import  -/  base-4.9.1.0:GHC.Show a027f5ac24879eaba752f44aa90fe511
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  base-4.9.1.0:System.IO e4a64a8e3dce8616da54f0ee7104f7db
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+95e5280a0d7af6a574d9623cb0d8f852
+  $fShowSym :: GHC.Show.Show Main.Sym
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Main.Sym
+                  Main.$fShowSym_$cshowsPrec
+                  Main.$fShowSym_$cshow
+                  Main.$fShowSym_$cshowList -}
+95e5280a0d7af6a574d9623cb0d8f852
+  $fShowSym1 :: Main.Sym -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: Main.Sym) (eta :: GHC.Base.String) ->
+                 case ds of wild {
+                   Main.A
+                   -> GHC.Base.augment
+                        @ GHC.Types.Char
+                        (\ @ b
+                           (c :: GHC.Types.Char -> b -> b)[OneShot]
+                           (n :: b)[OneShot] ->
+                         GHC.Base.foldr @ GHC.Types.Char @ b c n Main.$fShowSym3)
+                        eta
+                   Main.B
+                   -> GHC.Base.augment
+                        @ GHC.Types.Char
+                        (\ @ b
+                           (c :: GHC.Types.Char -> b -> b)[OneShot]
+                           (n :: b)[OneShot] ->
+                         GHC.Base.foldr @ GHC.Types.Char @ b c n Main.$fShowSym2)
+                        eta }) -}
+9d9befc8e82dcbefb49aa352b8a22101
+  $fShowSym2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "B"#) -}
+ee169b15aa3c7e6ae3412dbaf1054254
+  $fShowSym3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "A"#) -}
+95e5280a0d7af6a574d9623cb0d8f852
+  $fShowSym_$cshow :: Main.Sym -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Main.Sym) ->
+                 case x of wild {
+                   Main.A -> Main.$fShowSym3 Main.B -> Main.$fShowSym2 }) -}
+95e5280a0d7af6a574d9623cb0d8f852
+  $fShowSym_$cshowList :: [Main.Sym] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__ @ Main.Sym Main.$fShowSym1) -}
+95e5280a0d7af6a574d9623cb0d8f852
+  $fShowSym_$cshowsPrec ::
+    GHC.Types.Int -> Main.Sym -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ (ds :: GHC.Types.Int)
+                   (ds1 :: Main.Sym)
+                   (eta :: GHC.Base.String) ->
+                 case ds1 of wild {
+                   Main.A
+                   -> GHC.Base.augment
+                        @ GHC.Types.Char
+                        (\ @ b
+                           (c :: GHC.Types.Char -> b -> b)[OneShot]
+                           (n :: b)[OneShot] ->
+                         GHC.Base.foldr @ GHC.Types.Char @ b c n Main.$fShowSym3)
+                        eta
+                   Main.B
+                   -> GHC.Base.augment
+                        @ GHC.Types.Char
+                        (\ @ b
+                           (c :: GHC.Types.Char -> b -> b)[OneShot]
+                           (n :: b)[OneShot] ->
+                         GHC.Base.foldr @ GHC.Types.Char @ b c n Main.$fShowSym2)
+                        eta }) -}
+db4fd04866f99c4c0ec3cd92d5b718ba
+  $tc'A :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8308419401548445970##
+                   9015381646357663281##
+                   Main.$trModule
+                   Main.$tc'A1) -}
+a6026a9961da88ef06e45e91020e37b5
+  $tc'A1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'A"#) -}
+92f791de2931865b5b787a1dda20910e
+  $tc'B :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14786361072228847876##
+                   14495039028244595713##
+                   Main.$trModule
+                   Main.$tc'B1) -}
+85ab4a2d6bb0ff4db026a520094741ad
+  $tc'B1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'B"#) -}
+a85c65ba01e99f72c2064cf3514abe36
+  $tcSym :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17485556222648243139##
+                   10722875321243830691##
+                   Main.$trModule
+                   Main.$tcSym1) -}
+9caa4ace15ecdb8c08c64c94abf5a41c
+  $tcSym1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Sym"#) -}
+d6831ef04cb9301b090dfae6f7bb7ec7
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Main.$trModule2 Main.$trModule1) -}
+847d9fc3b8e6f0b424199f36b4999bb2
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Main"#) -}
+24ef6042833e75ffd7aa98b83ecca98d
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+95e5280a0d7af6a574d9623cb0d8f852
+  data Sym = A | B
+d662373f59e9a2cf8ebdcb90e8c0b938
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+d50321e899bf00155c5671982b26686b
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State#
+                             GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        Main.main4
+                        GHC.Types.True
+                        eta of ds1 { (#,#) ipv ipv1 ->
+                 Main.main3 Main.main2 Main.sampleSystem ipv }) -}
+bda3199b66dd5955ae5167e66f207372
+  main2 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (1) -}
+0d6b033491a26cc178a99746e189a524
+  main3 ::
+    GHC.Integer.Type.Integer
+    -> Lib.LSys Main.Sym
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, Strictness: <S,U><L,1*U(1*U,U)><S,U> -}
+081d4f3db4bc2f85ef145e800790113e
+  main4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   GHC.Show.showList__2
+                   Main.main5) -}
+34719e4e93254e295f1beab7fd0f3d3d
+  main5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Base.++
+                   @ GHC.Types.Char
+                   Main.$fShowSym2
+                   Main.main6) -}
+99b9114ef5fcd45d4de9db60002cd39d
+  main6 :: GHC.Base.String
+  {- Unfolding: (Main.main_showl (GHC.Types.[] @ Main.Sym)) -}
+b91baef494135bd6ac51070ebf26f2f0
+  main7 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+b917093abecdf74d9ba64e83f22fd64c
+  main_showl :: [Main.Sym] -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U> -}
+6870de2d69065368f12602ae6a2f5d9e
+  rew :: Main.Sym -> [Main.Sym]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Main.Sym) ->
+                 case ds of wild { Main.A -> Main.rew2 Main.B -> Main.rew1 }) -}
+dbd777a5557f9a0c3f45fdf115e5e545
+  rew1 :: [Main.Sym]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Main.Sym
+                   Main.A
+                   (GHC.Types.[] @ Main.Sym)) -}
+525ef5dfacb92317367286a430fba16a
+  rew2 :: [Main.Sym]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.: @ Main.Sym Main.A Main.rew3) -}
+9432a13436eefa78c605ca01b92b097f
+  rew3 :: [Main.Sym]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Main.Sym
+                   Main.B
+                   (GHC.Types.[] @ Main.Sym)) -}
+5c82bf2d39d42d4c2d78ee6b7c8884c4
+  sampleSystem :: Lib.LSys Main.Sym
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Lib.LSys @ Main.Sym Main.rew3 Main.rew) -}
+instance [safe] GHC.Show.Show [Main.Sym] = Main.$fShowSym
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
