@@ -14,6 +14,20 @@
   (major1) == 4 && (major2) <  9 || \
   (major1) == 4 && (major2) == 9 && (minor) <= 1)
 
+/* package bytestring-0.10.8.1 */
+#define VERSION_bytestring "0.10.8.1"
+#define MIN_VERSION_bytestring(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  10 || \
+  (major1) == 0 && (major2) == 10 && (minor) <= 8)
+
+/* package network-2.6.3.1 */
+#define VERSION_network "2.6.3.1"
+#define MIN_VERSION_network(major1,major2,minor) (\
+  (major1) <  2 || \
+  (major1) == 2 && (major2) <  6 || \
+  (major1) == 2 && (major2) == 6 && (minor) <= 3)
+
 /* tool gcc-6.2.1 */
 #define TOOL_VERSION_gcc "6.2.1"
 #define MIN_TOOL_VERSION_gcc(major1,major2,minor) (\
@@ -70,7 +84,7 @@
   (major1) == 2 && (major2) <  27 || \
   (major1) == 2 && (major2) == 27 && (minor) <= 0)
 
-#define CURRENT_COMPONENT_ID "L-HSystem-0.1.0.0-L23A8glBq1EKIsMBok0zK6"
+#define CURRENT_COMPONENT_ID "L-HSystem-0.1.0.0-H6K4ZpJw9Dw25dilqcdZNx"
 
-#define CURRENT_PACKAGE_KEY "L-HSystem-0.1.0.0-L23A8glBq1EKIsMBok0zK6"
+#define CURRENT_PACKAGE_KEY "L-HSystem-0.1.0.0-H6K4ZpJw9Dw25dilqcdZNx"
 

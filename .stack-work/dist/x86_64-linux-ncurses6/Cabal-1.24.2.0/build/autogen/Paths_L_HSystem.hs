@@ -30,7 +30,7 @@ version = Version [0,1,0,0] []
 bindir, libdir, dynlibdir, datadir, libexecdir, sysconfdir :: FilePath
 
 bindir     = "/home/Programming/Haskell/L-HSystem/.stack-work/install/x86_64-linux-ncurses6/lts-8.0/8.0.2/bin"
-libdir     = "/home/Programming/Haskell/L-HSystem/.stack-work/install/x86_64-linux-ncurses6/lts-8.0/8.0.2/lib/x86_64-linux-ghc-8.0.2/L-HSystem-0.1.0.0-L23A8glBq1EKIsMBok0zK6"
+libdir     = "/home/Programming/Haskell/L-HSystem/.stack-work/install/x86_64-linux-ncurses6/lts-8.0/8.0.2/lib/x86_64-linux-ghc-8.0.2/L-HSystem-0.1.0.0-H6K4ZpJw9Dw25dilqcdZNx"
 dynlibdir  = "/home/Programming/Haskell/L-HSystem/.stack-work/install/x86_64-linux-ncurses6/lts-8.0/8.0.2/lib/x86_64-linux-ghc-8.0.2"
 datadir    = "/home/Programming/Haskell/L-HSystem/.stack-work/install/x86_64-linux-ncurses6/lts-8.0/8.0.2/share/x86_64-linux-ghc-8.0.2/L-HSystem-0.1.0.0"
 libexecdir = "/home/Programming/Haskell/L-HSystem/.stack-work/install/x86_64-linux-ncurses6/lts-8.0/8.0.2/libexec"

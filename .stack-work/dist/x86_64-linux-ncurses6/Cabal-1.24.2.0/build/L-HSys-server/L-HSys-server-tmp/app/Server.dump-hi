@@ -1,0 +1,213 @@
+
+==================== FINAL INTERFACE ====================
+2017-02-19 20:56:16.781199345 UTC
+
+interface main@main:Server 8002
+  interface hash: 61857d8234382c528a73de435eafc250
+  ABI hash: 89639adca736d0449385ac43c5dfc456
+  export-list hash: f3f7b52226e922aca9de1bca858a11a2
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: afce8e7c7adfbd7c8ef828377d9cd316
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Server.interaction
+  Server.main
+module dependencies:
+package dependencies: L-HSystem-0.1.0.0@L-HSystem-0.1.0.0-H6K4ZpJw9Dw25dilqcdZNx
+                      array-0.5.1.1@array-0.5.1.1 base-4.9.1.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+                      network-2.6.3.1@network-2.6.3.1-ABFtZSq90Z9BfMXNiqgBoe
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         network-2.6.3.1@network-2.6.3.1-ABFtZSq90Z9BfMXNiqgBoe:Network.Socket
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+import  -/  L-HSystem-0.1.0.0@L-HSystem-0.1.0.0-H6K4ZpJw9Dw25dilqcdZNx:LHsys 57c551d14280d425d548e228d4a25005
+import  -/  base-4.9.1.0:Control.Monad a6784c5dab0d75c63dabec5a37843f98
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString 43e99fdac51908da414a28958688da64
+import  -/  bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Char8 64661030f691dd1495e363eeda7a5344
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  network-2.6.3.1@network-2.6.3.1-ABFtZSq90Z9BfMXNiqgBoe:Network.Socket 155ab4d71dfecd4d511d71b952a9d57c
+import  -/  network-2.6.3.1@network-2.6.3.1-ABFtZSq90Z9BfMXNiqgBoe:Network.Socket.ByteString eb324d1878b7fcc4e933c66d8daaceb7
+import  -/  network-2.6.3.1@network-2.6.3.1-ABFtZSq90Z9BfMXNiqgBoe:Network.Socket.Types 9fcad5d29eed4fbd1a7f0c91dc4134e7
+02b7963a57006f11768d99ee15be977b
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Server.$trModule2
+                   Server.$trModule1) -}
+f728e61ebc5666a5698aa1455a998eb8
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Server"#) -}
+8ef95e930e3ffd3339f0bb0b49ae65d8
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+c1ff76b01f12f87fdd2a3c83e28f0983
+  interaction :: Network.Socket.Types.Socket -> GHC.Types.IO ()
+  {- Arity: 2, Strictness: <L,U(U(U),A,A,A,A)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Server.interaction1
+                  `cast`
+                (<Network.Socket.Types.Socket>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+3657081fdc51ce6f2b9a7f0fb307e5bb
+  interaction1 ::
+    Network.Socket.Types.Socket
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <L,U(U(U),A,A,A,A)><S,U> -}
+be441afd4fc167655a672283094698d2
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Server.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+fee9bb81851ae492e29f71501414c66d
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case Network.Socket.getAddrInfo1
+                        Server.main10
+                        Server.main8
+                        Server.main6
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild {
+                   []
+                   -> GHC.Prim.raiseIO#
+                        @ GHC.Exception.SomeException
+                        @ ()
+                        Server.main3
+                        ipv
+                   : addr ds
+                   -> case addr of wild1 { Network.Socket.AddrInfo ds2 ds3 ds4 ds5 ds6 ds7 ->
+                      case ds5
+                             `cast`
+                           (Foreign.C.Types.N:CInt[0]) of ww { GHC.Int.I32# ww1 ->
+                      case Network.Socket.$wsocket
+                             ds3
+                             ds4
+                             ww1
+                             ipv of ds8 { (#,#) ipv2 ipv3 ->
+                      case ipv3 of wild2 { Network.Socket.Types.MkSocket ds9 fam stype ds10 ds11 ->
+                      case ds11 of ww6 { GHC.MVar.MVar ww7 ->
+                      case Network.Socket.$wbind
+                             ds9
+                             ww7
+                             ds6
+                             ipv2 of ds12 { (#,#) ipv4 ipv5 ->
+                      case Network.Socket.$wlisten
+                             ds9
+                             ww7
+                             Server.main2
+                             ipv4 of ds13 { (#,#) ipv6 ipv7 ->
+                      case ds9
+                             `cast`
+                           (Foreign.C.Types.N:CInt[0]) of ww2 { GHC.Int.I32# ww3 ->
+                      case Network.Socket.$waccept
+                             ww3
+                             fam
+                             stype
+                             ds10
+                             ww7
+                             ipv6 of ds14 { (#,#) ipv8 ipv9 ->
+                      case ipv9 of wild3 { (,) client cliaddr ->
+                      case Server.interaction1 client ipv8 of ds15 { (#,#) ipv10 ipv11 ->
+                      case client of ww4 { Network.Socket.Types.MkSocket ww5 ww9 ww10 ww11 ww12 ->
+                      case ww12 of ww13 { GHC.MVar.MVar ww14 ->
+                      case Network.Socket.$wclose
+                             ww5
+                             ww14
+                             ipv10 of ds16 { (#,#) ipv12 ipv13 ->
+                      Network.Socket.$wclose
+                        ww2 `cast` (Sym (Foreign.C.Types.N:CInt[0]))
+                        ww7
+                        ipv12 } } } } } } } } } } } } } } } }) -}
+b73d739e71bd10276440809382ad7a74
+  main10 :: GHC.Base.Maybe Network.Socket.AddrInfo
+  {- Unfolding: (GHC.Base.Just
+                   @ Network.Socket.AddrInfo
+                   Server.main11) -}
+83527171c50c180d59dcf978b630146f
+  main11 :: Network.Socket.AddrInfo
+  {- Unfolding: (Network.Socket.AddrInfo
+                   Server.main12
+                   Network.Socket.Types.AF_UNSPEC
+                   Network.Socket.Types.Stream
+                   Network.Socket.defaultHints3
+                     `cast`
+                   (Sym (Foreign.C.Types.N:CInt[0]))
+                   Network.Socket.defaultHints2
+                   Network.Socket.defaultHints1) -}
+5e034c30df227ed86b2916d049ff195f
+  main12 :: [Network.Socket.AddrInfoFlag]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ Network.Socket.AddrInfoFlag
+                   Network.Socket.AI_NUMERICHOST
+                   Server.main13) -}
+33d610a575ce27bc87be66eb10089e17
+  main13 :: [Network.Socket.AddrInfoFlag]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ Network.Socket.AddrInfoFlag
+                   Network.Socket.AI_NUMERICSERV
+                   (GHC.Types.[] @ Network.Socket.AddrInfoFlag)) -}
+e2bf41e255d51b7835de1421e4ca2c98
+  main2 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 1#) -}
+23d2b6e8f36d036654fc34967ce1c725
+  main3 :: GHC.Exception.SomeException
+  {- Unfolding: (GHC.IO.Exception.$fExceptionIOException_$ctoException
+                   Server.main4) -}
+ca25a115586f8df66df7132c5ace9880
+  main4 :: GHC.IO.Exception.IOException
+  {- Unfolding: (GHC.IO.Exception.IOError
+                   (GHC.Base.Nothing @ GHC.IO.Handle.Types.Handle)
+                   GHC.IO.Exception.UserError
+                   (GHC.Types.[] @ GHC.Types.Char)
+                   Server.main5
+                   (GHC.Base.Nothing @ Foreign.C.Types.CInt)
+                   (GHC.Base.Nothing @ GHC.IO.FilePath)) -}
+c9722ae28311abb9e350f0de65ac2875
+  main5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Pattern match failure in do expression at app/Server.hs:25:3-8"#) -}
+18b4769281dff40986f60dac44e37778
+  main6 :: GHC.Base.Maybe Network.Socket.ServiceName
+  {- Unfolding: (GHC.Base.Just
+                   @ Network.Socket.ServiceName
+                   Server.main7) -}
+9a1bcbce15f2057a0860a57d3585982b
+  main7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "5000"#) -}
+ce630871cdab21aa73b160f6db0a4f9c
+  main8 :: GHC.Base.Maybe Network.Socket.HostName
+  {- Unfolding: (GHC.Base.Just
+                   @ Network.Socket.HostName
+                   Server.main9) -}
+9b4ec0d2531f7f68d13513e45676b7de
+  main9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "127.0.0.1"#) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+
